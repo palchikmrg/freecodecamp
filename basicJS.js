@@ -240,5 +240,206 @@ const lastName = "Lovelace";
 firstLetterOfLastName = lastName[0]; // Change this line
 
 
+// 34 Understand String Immutability
+
+// Setup
+let myStr = "Jello World";
+
+// Only change code below this line
+myStr = "Hello World"; // Change this line
+// Only change code above this line
+
+
+// 35 Use Bracket Notation to Find the Nth Character in a String
+
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const thirdLetterOfLastName = lastName[2]; // Change this line
+
+
+// 36 Use Bracket Notation to Find the Last Character in a String
+
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const lastLetterOfLastName = lastName[lastName.length - 1]; // Change this line
+
+
+// 37 Use Bracket Notation to Find the Nth-to-Last Character in a String
+
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+
+
+// 38 Word Blanks
+
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+var wordBlanks = "This " + myAdjective + " " + myNoun +  " " + myVerb + " " + myAdverb; // Change this line
+// Only change code above this line
+
+
+// 39 Store Multiple Values in one Variable using JavaScript Arrays
+
+// Only change code below this line
+const myArray = ["jhgfh", 2];
+
+
+// 40 Nest one Array within Another Array
+
+const myArray = [[1, 2], [3, 4]];
+
+
+// 41 Access Array Data with Indexes
+
+const myArray = [50, 60, 70];
+var myData = myArray[0]
+
+
+// 42 Modify Array Data With Indexes
+
+const myArray = [18, 64, 99];
+
+// Only change code below this line
+myArray[0] = 45;
+
+
+// 43 Access Multi-Dimensional Arrays With Indexes
+
+const myArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14],
+  ];
+  
+  const myData = myArray[2][1];
+
+
+//  44 Manipulate Arrays With push()
+
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+myArray.push(["dog", 3]);
+
+
+// 45 Manipulate Arrays With pop()
+
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+const removedFromMyArray = myArray.pop();
+
+
+// 46 Manipulate Arrays With shift()
+
+const myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line
+const removedFromMyArray = myArray.shift();
+
+
+// 47 Manipulate Arrays With unshift()
+
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+// Only change code below this line
+myArray.unshift(["Paul", 35]);
+
+
+// 48 Shopping List
+
+const myList = [
+    ["xdfbz", 5],
+    ["fvdc", 1],
+    ["fvcxz", 156],
+    ["vddfv", 165],
+    ["bvcx", 135],
+    ["vbnfdd", 125],
+    ["nbvc", 159],
+  ];
+
+
+//  49 Write Reusable JavaScript with Functions
+
+function reusableFunction() {
+    console.log("Hi World");
+  };
+  reusableFunction();
+
+
+//   50 Passing Values to Functions with Arguments
+
+function functionWithArgs(param1, param2) {
+    console.log(param1 + param2);
+  };
+  functionWithArgs (1, 2);
+
+  
+// 51 Return a Value from a Function with Return
+
+function timesFive(num) {
+    return num * 5;
+  }
+  
+  const answer = timesFive();
+
+  
+//   52 Global Scope and Functions
+
+let myGlobal = 10;
+function fun1() { 
+ oopsGlobal = 5;
+
+  // Assign 5 to oopsGlobal Here
+
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+};
+
+
+// 53 Local Scope and Functions
+
+function myLocalScope() {
+    // Only change code below this line
+    const myVar = 3
+  
+    console.log('inside myLocalScope', myVar);
+  }
+  myLocalScope();
+  
+  // Run and check the console
+  // myVar is not defined outside of myLocalScope
+  console.log('outside myLocalScope', myVar);
+
+
+//  54 Global vs. Local Scope in Functions
+
+
+
+
 
 
